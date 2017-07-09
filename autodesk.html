@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.min.css" type="text/css">
+</head>
+<body>
+
+<table>
+    <tbody>
+    <tr>
+        <td style="color: #ff00ff; background-color:#FFFFFF">Q</td>
+        <td style="background-color: #442244; color: #442244">Y</td>
+        <td style="color: #FFFF00; background-color:#442244">A</td> </tr>
+    <tr> <td style="color: #FFEEFE; background-color:#990000">Q</td>
+        <td style="color: #FFFF00; background-color:#FF0">M</td> <td style="color: #000000; background-color:#FF7777">O</td> </tr> </tbody> </table>
+<div id="result"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+solution();
+    function solution() {
+        var n = ''
+        $('td').each(function(i) {
+
+
+            if ($(this).css('color') != $(this).css('background-color'))
+            {
+                n = n + $('td').text();
+            }
+        })
+        console.log(n);
+        $('#result').html(n);
+    }
+</script>
+
+
+</body>
+</html>
