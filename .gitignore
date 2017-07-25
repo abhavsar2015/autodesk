@@ -1,0 +1,23 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+**/.idea
+
+**/node_modules
+**/bower_components
+##**/build
+**/.tmp
+**/.dist
+**/.sass-cache
+
+**/.settings
+**/.metadata
+**/Servers
+**/RemoteSystemsTempFiles
+
+**/target/*
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
